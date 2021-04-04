@@ -1,0 +1,8 @@
+# Herald Wearable - Base device
+
+# Copyright (c) 2021 The Herald Project Contributors
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_NRF52833_HERALD_BASE
+	bool "nRF52 HERALD BASE"
+	depends on SOC_NRF52833_QIAA

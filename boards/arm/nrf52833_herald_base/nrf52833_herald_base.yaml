@@ -1,0 +1,10 @@
+identifier: nrf52833_herald_base
+name: Herald nRF52833 Wearable or Beacon
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 128
+flash: 512
