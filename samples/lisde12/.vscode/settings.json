@@ -1,0 +1,7 @@
+{
+  "cmake.configureEnvironment": {
+    //"BOARD": "nrf5340dk_nrf5340_cpuapp"
+    "BOARD": "nrf52833_herald_base"
+  },
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}
