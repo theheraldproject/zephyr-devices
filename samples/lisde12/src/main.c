@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 2021 Herald Project Contributors
  * Copyright (c) 2019 Nordic Semiconductor ASA
  *
  * SPDX-License-Identifier: Apache-2.0
@@ -36,11 +37,11 @@ static void fetch_and_display(const struct device *sensor)
 	if (rc < 0) {
 		printf("ERROR: Update failed: %d\n", rc);
 	} else {
-		printf("#%u @ %u ms: %sx %f , y %f , z %f\n",
+		printf("#%u @ %u ms: %sx %d.%d , y %d.%d , z %d.%d\n",
 		       count, k_uptime_get_32(), overrun,
-		       sensor_value_to_double(&accel[0]),
-		       sensor_value_to_double(&accel[1]),
-		       sensor_value_to_double(&accel[2]));
+		       accel[0].val1, accel[0].val2,
+		       accel[1].val1, accel[1].val2,
+					 accel[2].val1, accel[2].val2);
 	}
 }
 
